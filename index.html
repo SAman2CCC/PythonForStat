@@ -1,246 +1,367 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Python For Statistics OER Library</title>
-  <meta name="description" content="Open educational resources for introductory statistics using Python." />
-  <style>
-    :root {
-      --bg: #f4efe6;
-      --paper: #fffaf2;
-      --ink: #1f2933;
-      --muted: #52606d;
-      --brand: #0b6e4f;
-      --line: #d9cbb6;
-      --card-shadow: 0 14px 30px rgba(31, 41, 51, 0.12);
-    }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python for Introductory Statistics OER Library</title>
+    <meta
+      name="description"
+      content="Open educational resources for introductory statistics using Python by Simon Aman of Truman College, City Colleges of Chicago."
+    />
+    <style>
+      :root {
+        --bg: #f4efe6;
+        --paper: #fffaf2;
+        --ink: #1f2933;
+        --muted: #52606d;
+        --brand: #0b6e4f;
+        --line: #d9cbb6;
+        --card-shadow: 0 14px 30px rgba(31, 41, 51, 0.12);
+      }
 
-    * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
 
-    body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 12% 10%, #fff5da 0%, transparent 34%),
-        radial-gradient(circle at 88% 20%, #f8e1d4 0%, transparent 34%),
-        linear-gradient(180deg, #f8f2e8 0%, #f3ebdf 52%, #efe5d6 100%);
-      font-family: "Merriweather", Georgia, serif;
-      line-height: 1.65;
-    }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 12% 10%, #fff5da 0%, transparent 34%),
+          radial-gradient(circle at 88% 20%, #f8e1d4 0%, transparent 34%),
+          linear-gradient(180deg, #f8f2e8 0%, #f3ebdf 52%, #efe5d6 100%);
+        font-family: "Merriweather", Georgia, serif;
+        line-height: 1.65;
+      }
 
-    .hero {
-      padding: 3.2rem 1.2rem 2rem;
-      border-bottom: 1px solid var(--line);
-      position: relative;
-      overflow: hidden;
-    }
+      .hero {
+        padding: 3.2rem 1.2rem 2rem;
+        border-bottom: 1px solid var(--line);
+        position: relative;
+        overflow: hidden;
+      }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -120px -90px auto;
-      width: 360px;
-      height: 360px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, rgba(11, 110, 79, 0.18), rgba(11, 110, 79, 0));
-      pointer-events: none;
-    }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -120px -90px auto;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(11, 110, 79, 0.18),
+          rgba(11, 110, 79, 0)
+        );
+        pointer-events: none;
+      }
 
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
 
-    .badge {
-      display: inline-block;
-      font-family: "Space Grotesk", "Segoe UI", sans-serif;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--brand);
-      border: 1px solid #8bbda9;
-      border-radius: 999px;
-      padding: 0.25rem 0.7rem;
-      background: #edf7f3;
-      margin-bottom: 1rem;
-    }
+      .badge {
+        display: inline-block;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--brand);
+        border: 1px solid #8bbda9;
+        border-radius: 999px;
+        padding: 0.25rem 0.7rem;
+        background: #edf7f3;
+        margin-bottom: 1rem;
+      }
 
-    h1, h2, h3 {
-      font-family: "Space Grotesk", "Segoe UI", sans-serif;
-      line-height: 1.15;
-      margin-top: 0;
-    }
+      h1,
+      h2,
+      h3 {
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        line-height: 1.15;
+        margin-top: 0;
+      }
 
-    h1 {
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      margin-bottom: 0.8rem;
-      max-width: 16ch;
-    }
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        margin-bottom: 0.8rem;
+        max-width: 16ch;
+      }
 
-    .subtitle {
-      font-size: 1.08rem;
-      color: var(--muted);
-      max-width: 66ch;
-      margin: 0;
-    }
+      .subtitle {
+        font-size: 1.08rem;
+        color: var(--muted);
+        max-width: 66ch;
+        margin: 0;
+      }
 
-    .grid {
-      display: grid;
-      gap: 1.3rem;
-      grid-template-columns: repeat(12, 1fr);
-      margin: 2rem auto 2.5rem;
-    }
+      .grid {
+        display: grid;
+        gap: 1.3rem;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 2rem auto 2.5rem;
+      }
 
-    .card {
-      grid-column: span 12;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 1.3rem;
-      box-shadow: var(--card-shadow);
-      position: relative;
-      isolation: isolate;
-    }
+      .card {
+        grid-column: span 12;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 1.3rem;
+        box-shadow: var(--card-shadow);
+        position: relative;
+        isolation: isolate;
+      }
 
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 18px;
-      background: linear-gradient(160deg, rgba(11,110,79,0.04), rgba(176,58,46,0.04));
-      z-index: -1;
-    }
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 18px;
+        background: linear-gradient(
+          160deg,
+          rgba(11, 110, 79, 0.04),
+          rgba(176, 58, 46, 0.04)
+        );
+        z-index: -1;
+      }
 
-    .card h2 {
-      margin-bottom: 0.45rem;
-      font-size: clamp(1.25rem, 2.4vw, 1.7rem);
-    }
+      .card h2 {
+        margin-bottom: 0.45rem;
+        font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+      }
 
-    .meta {
-      margin: 0 0 1rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+      .meta {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
-      margin: 0.9rem 0 0;
-    }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin: 0.9rem 0 0;
+      }
 
-    .button {
-      text-decoration: none;
-      font-family: "Space Grotesk", "Segoe UI", sans-serif;
-      font-weight: 600;
-      border-radius: 10px;
-      padding: 0.55rem 0.9rem;
-      border: 1px solid transparent;
-      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
-    }
+      .button {
+        text-decoration: none;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 0.55rem 0.9rem;
+        border: 1px solid transparent;
+        transition:
+          transform 0.18s ease,
+          background 0.18s ease,
+          border-color 0.18s ease;
+      }
 
-    .button.primary {
-      background: #0b6e4f;
-      color: #ffffff;
-    }
+      .button.primary {
+        background: #0b6e4f;
+        color: #ffffff;
+      }
 
-    .button.secondary {
-      background: #fff;
-      color: var(--ink);
-      border-color: #b7c9bf;
-    }
+      .button.secondary {
+        background: #fff;
+        color: var(--ink);
+        border-color: #b7c9bf;
+      }
 
-    .button:hover {
-      transform: translateY(-1px);
-    }
+      .button:hover {
+        transform: translateY(-1px);
+      }
 
-    .button:focus-visible,
-    a:focus-visible {
-      outline: 3px solid #d94f2a;
-      outline-offset: 2px;
-    }
+      .button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid #d94f2a;
+        outline-offset: 2px;
+      }
 
-    .panel {
-      background: #fffaf2;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 1rem 1.2rem;
-      box-shadow: var(--card-shadow);
-    }
+      .panel {
+        background: #fffaf2;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 1rem 1.2rem;
+        box-shadow: var(--card-shadow);
+      }
 
-    .list {
-      margin: 0.45rem 0 0;
-      padding-left: 1.2rem;
-    }
+      .list {
+        margin: 0.45rem 0 0;
+        padding-left: 1.2rem;
+      }
 
-    .list li { margin: 0.2rem 0; }
+      .list li {
+        margin: 0.2rem 0;
+      }
 
-    footer {
-      margin: 2.2rem auto 2.8rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+      footer {
+        margin: 2.2rem auto 2.8rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
 
-    @media (min-width: 840px) {
-      .card.book-a { grid-column: span 6; }
-      .card.book-b { grid-column: span 6; }
-    }
-  </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="hero">
-    <div class="wrap">
-      <div class="badge">Open Educational Resource</div>
-      <h1>Python For Introductory Statistics</h1>
-      <p class="subtitle">A freely available, classroom-ready set of books and workbooks for teaching statistics with Python, published under Creative Commons Attribution 4.0.</p>
-    </div>
-  </header>
+      @media (min-width: 840px) {
+        .card.book-a {
+          grid-column: span 6;
+        }
+        .card.book-b {
+          grid-column: span 6;
+        }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="badge">Open Educational Resource</div>
+        <h1>Python For Introductory Statistics</h1>
+        <p class="subtitle">
+          A freely available, classroom-ready open textbook and companion
+          workbook for teaching statistics with Python by Simon Aman, Truman
+          College, City Colleges of Chicago, published under Creative Commons
+          Attribution 4.0.
+        </p>
+      </div>
+    </header>
 
-  <main class="wrap" id="main-content">
-    <section class="grid" aria-label="Published books">
-      <article class="card book-a">
-        <h2>Workbook V3</h2>
-        <p class="meta">Interactive workbook with coding practice and guided exercises.</p>
-        <div class="actions">
-          <a class="button primary" href="Workbook_V3_published.html">Read Online</a>
-          <a class="button secondary" href="Workbook_V3_published.pdf">Download PDF</a>
-          <a class="button secondary" href="Workbook_V3.ipynb">Notebook Source</a>
-        </div>
-      </article>
+    <main class="wrap" id="main-content">
+      <section
+        class="panel"
+        aria-labelledby="about-heading"
+        style="margin-top: 2rem"
+      >
+        <h2 id="about-heading">About This Collection</h2>
+        <p>
+          This site publishes the main textbook, its companion student workbook,
+          downloadable PDFs, and the CC BY 4.0 license information used for OER
+          distribution and platform submissions.
+        </p>
+        <ul class="list">
+          <li>Author: Simon Aman</li>
+          <li>Institution: Truman College, City Colleges of Chicago</li>
+          <li>Contact: <a href="mailto:saman2@ccc.edu">saman2@ccc.edu</a></li>
+        </ul>
+      </section>
 
-      <article class="card book-b">
-        <h2>Python for Introductory Statistics V2</h2>
-        <p class="meta">Full textbook edition with conceptual explanations and examples.</p>
-        <div class="actions">
-          <a class="button primary" href="Python_for_Introductory_Statistics_V2_published.html">Read Online</a>
-          <a class="button secondary" href="Python_for_Introductory_Statistics_V2_published.pdf">Download PDF</a>
-          <a class="button secondary" href="Python_for_Introductory_Statistics_V2.ipynb">Notebook Source</a>
-        </div>
-      </article>
-    </section>
+      <section class="grid" aria-label="Published books">
+        <article class="card book-a">
+          <h2>Student's Lab Workbook</h2>
+          <p class="meta">
+            Companion workbook with coding practice, labs, and guided exercises.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="Workbook_V3_published.html"
+              >Read Online</a
+            >
+            <a class="button secondary" href="Workbook_V3_published.pdf"
+              >Download PDF</a
+            >
+            <a class="button secondary" href="Workbook_V3.ipynb"
+              >Notebook Source</a
+            >
+          </div>
+        </article>
 
-    <section class="panel" aria-labelledby="license-heading">
-      <h3 id="license-heading">License and Attribution</h3>
-      <p>This collection is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).</p>
-      <ul class="list">
-        <li><a href="LICENSE-CC-BY-4.0.md">Read the plain-language CC BY 4.0 summary</a></li>
-        <li><a href="LICENSE">Read the legal license text</a></li>
-      </ul>
-    </section>
+        <article class="card book-b">
+          <h2>Python for Introductory Statistics V2</h2>
+          <p class="meta">
+            Main textbook edition with conceptual explanations, examples, and
+            reference material.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="Python_for_Introductory_Statistics_V2_published.html"
+              >Read Online</a
+            >
+            <a
+              class="button secondary"
+              href="Python_for_Introductory_Statistics_V2_published.pdf"
+              >Download PDF</a
+            >
+            <a
+              class="button secondary"
+              href="Python_for_Introductory_Statistics_V2.ipynb"
+              >Notebook Source</a
+            >
+          </div>
+        </article>
+      </section>
 
-    <section class="panel" aria-labelledby="citation-heading" style="margin-top:1rem;">
-      <h3 id="citation-heading">Suggested Citation</h3>
-      <p>Alam, S. (2026). <em>Python For Introductory Statistics</em> (Workbook V3 and V2 textbook). CC BY 4.0.</p>
-    </section>
-  </main>
+      <section class="panel" aria-labelledby="license-heading">
+        <h3 id="license-heading">License and Attribution</h3>
+        <p>
+          This collection is licensed under Creative Commons Attribution 4.0
+          International (CC BY 4.0).
+        </p>
+        <ul class="list">
+          <li>
+            <a href="LICENSE-CC-BY-4.0.md"
+              >Read the plain-language CC BY 4.0 summary</a
+            >
+          </li>
+          <li><a href="LICENSE">Read the legal license text</a></li>
+        </ul>
+      </section>
 
-  <footer class="wrap">
-    <p>Maintained at <a href="https://github.com/SAman2CCC/PythonForStat">github.com/SAman2CCC/PythonForStat</a></p>
-  </footer>
-</body>
+      <section
+        class="panel"
+        aria-labelledby="citation-heading"
+        style="margin-top: 1rem"
+      >
+        <h3 id="citation-heading">Suggested Citation</h3>
+        <p>
+          Aman, S. (2026). <em>Python for Introductory Statistics</em>. Truman
+          College, City Colleges of Chicago. CC BY 4.0. Companion workbook:
+          <em>Student's Lab Workbook</em>.
+        </p>
+      </section>
+
+      <section
+        class="panel"
+        aria-labelledby="submission-heading"
+        style="margin-top: 1rem"
+      >
+        <h3 id="submission-heading">OER Submission Summary</h3>
+        <ul class="list">
+          <li>
+            Main textbook:
+            <a href="Python_for_Introductory_Statistics_V2_published.html"
+              >Python for Introductory Statistics V2</a
+            >
+          </li>
+          <li>
+            Companion workbook:
+            <a href="Workbook_V3_published.html">Student's Lab Workbook</a>
+          </li>
+          <li>
+            Portable files:
+            <a href="Python_for_Introductory_Statistics_V2_published.pdf"
+              >textbook PDF</a
+            >
+            and <a href="Workbook_V3_published.pdf">workbook PDF</a>
+          </li>
+          <li>License: <a href="LICENSE-CC-BY-4.0.md">CC BY 4.0</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      <p>
+        Maintained at
+        <a href="https://github.com/SAman2CCC/PythonForStat"
+          >github.com/SAman2CCC/PythonForStat</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
