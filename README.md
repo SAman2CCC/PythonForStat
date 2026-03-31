@@ -23,7 +23,7 @@ This OER project is licensed under **Creative Commons Attribution 4.0 Internatio
 
 ## Suggested Citation
 
-Alam, S. (2026). *Python For Introductory Statistics* (Workbook V3 and V2 textbook). CC BY 4.0.
+Aman, S. (2026). *Python For Introductory Statistics* (Workbook V3 and V2 textbook). CC BY 4.0.
 
 ## Publish on GitHub Pages
 
