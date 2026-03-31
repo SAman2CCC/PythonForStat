@@ -7820,6 +7820,76 @@ a.anchor-link {
     outline: 3px solid #1f7a5c;
     outline-offset: 2px;
   }
+
+  @page {
+    size: Letter;
+    margin: 0.75in;
+  }
+
+  @media print {
+    body {
+      background: #ffffff !important;
+      color: #111111 !important;
+      font-family: Georgia, "Times New Roman", serif !important;
+      font-size: 11pt;
+      line-height: 1.35;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .skip-link {
+      display: none !important;
+    }
+
+    main {
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .jp-RenderedMarkdown h1,
+    .jp-RenderedMarkdown h2,
+    .jp-RenderedMarkdown h3 {
+      break-after: avoid-page;
+      page-break-after: avoid;
+    }
+
+    .jp-RenderedMarkdown h1:not(:first-of-type) {
+      break-before: page;
+      page-break-before: always;
+      margin-top: 0.15in;
+    }
+
+    .jp-RenderedMarkdown h2 {
+      break-before: auto;
+      page-break-before: auto;
+      margin-top: 0.12in;
+    }
+
+    .jp-RenderedMarkdown h3 {
+      margin-top: 0.08in;
+    }
+
+    p,
+    li {
+      orphans: 3;
+      widows: 3;
+    }
+
+    pre,
+    table,
+    img,
+    .jp-Cell,
+    .jp-Cell-outputWrapper {
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+    }
+
+    .jp-RenderedHTMLCommon img {
+      max-height: 8.5in;
+      object-fit: contain;
+    }
+  }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
