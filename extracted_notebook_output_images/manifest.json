@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Figure 1",
+    "cell_id": "cell-289",
+    "output_index": 2,
+    "image_rel": "images/output_001.png",
+    "code_preview": "import matplotlib.pyplot as plt\nv = ['yes','no']\nf = [11,9]\nplt.bar(v,f)",
+    "markdown_context": "[Watch demo video](https://youtu.be/QsYU4o1yLJg) 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `v = ['Yes','No']` 4. Type `f = [11,9]` 5. Type `plt.bar(v,f)` 6. Click `play` button 7. Right click image to save it to yo | Example: 20 students were asked if they were registered to vote. Their responses are given below. Plot a pie chart (percent). vote|freq ---|--- Yes|11 No|9"
+  },
+  {
+    "title": "Figure 2",
+    "cell_id": "cell-292",
+    "output_index": 2,
+    "image_rel": "images/output_002.png",
+    "code_preview": "import matplotlib.pyplot as plt\nv = ['yes','no']\nf = [11,9]\nplt.pie(f,labels=v,autopct='%1.1f%%')",
+    "markdown_context": "[Watch demo video](https://youtu.be/N0kg36QPWzQ) 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `v = ['Yes','No']` 4. Type `f = [11,9]` 5. Type `plt.bar(f,labels=f,autopct='%1.1f%%')` 6. Click `play` button 7. Right cli | Example: 20 students were asked if they were registered to vote. Their responses are given below. Plot a bar graph. vote|freq ---|--- Yes|11 No|9 Add title, vertical and horizontal labels."
+  },
+  {
+    "title": "Figure 3",
+    "cell_id": "cell-295",
+    "output_index": 2,
+    "image_rel": "images/output_003.png",
+    "code_preview": "import matplotlib.pyplot as plt\nv = ['yes','no']\nf = [11,9]\nplt.bar(v,f)\nplt.suptitle(\"Voter Registration\")\nplt.xlabel(\"Registration\")\nplt.ylabel(\"Frequency\")",
+    "markdown_context": "1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `v = ['Yes','No']` 4. Type `f = [11,9]` 5. Type `plt.bar(v,f)` 6. Type `plt.suptitle(\"Voter Registation\")` 7. Type `plt.xlabel(\"Registration\")` 8. Type `plt.ylabel(\"Frequen | Example: The frequency distribution below is the waiting time, in minutes, of 20 customers at a fast food restaurant. Waiting_time | Frequency -----|------- 1|2 2|3 3|4 4|5 5|5 6|1"
+  },
+  {
+    "title": "Figure 4",
+    "cell_id": "cell-298",
+    "output_index": 2,
+    "image_rel": "images/output_004.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\nwaiting_time = [1,2,3,4,5,6]        \nfrequency = [2,3,4,5,5,1]      \n\nplt.bar(waiting_time,frequency)        \n\nplt.xlabel(\"Waiting Time\")\nplt.ylabel(\"Frequency\")",
+    "markdown_context": "Plot a bar graph and a pie chart. **Note**: First the data values in the two columns are entered separately using Python lists: `waiting_time` and `frequency`. 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `waiting_tim | Example: The frequency distribution below is the waiting time, in minutes, of 20 customers at a fast food restaurant. Waiting_time | Frequency -----|------- 1|2 2|3 3|4 4|5 5|5 6|1 Graph a Pie Chart"
+  },
+  {
+    "title": "Figure 5",
+    "cell_id": "cell-300",
+    "output_index": 2,
+    "image_rel": "images/output_005.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\nwaiting_time = [1,2,3,4,5,6]        \nfrequency = [2,3,4,5,5,1]      \nplt.pie(frequency, labels=waiting_time,autopct='%1.1f%%')        \nplt.xlabel(\"Waiting Time\")",
+    "markdown_context": "Example: The frequency distribution below is the waiting time, in minutes, of 20 customers at a fast food restaurant. Waiting_time | Frequency -----|------- 1|2 2|3 3|4 4|5 5|5 6|1 Graph a Pie Chart | <a name=\"hist\"></a> ## 5.4 Histogram, Polygon and Ogive A histogram uses connected bars to represent the frequency distribution of a continuous dataset."
+  },
+  {
+    "title": "Figure 6",
+    "cell_id": "cell-305",
+    "output_index": 2,
+    "image_rel": "images/output_006.png",
+    "code_preview": "import matplotlib.pyplot as plt\nx = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80, \n     83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100]\nplt.hist(x,bins=5,ec='k')",
+    "markdown_context": "[Deom Video Link](https://youtu.be/L8d6GKv-95Y) 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, | Example: The dataset below is scores of 20 students in a Math class. Write a program to construct a histogram with 5 classes(bins). Use class limits for the x-axis. `33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80,"
+  },
+  {
+    "title": "Figure 7",
+    "cell_id": "cell-308",
+    "output_index": 2,
+    "image_rel": "images/output_007.png",
+    "code_preview": "import matplotlib.pyplot as plt\nx = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74, \n           78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100]\n\n(freq,class_limit,patches) = plt.hist(x,bins=5,ec='k')\nplt.xticks(class_limit)",
+    "markdown_context": "1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100]` 4. Type `(freq, class_limit, patches) = p | Example: Histograms from raw data Use the US Senators age data given below and write a program to: 1. Make a histogram with 5 bins (classes) and age range of 40 to 90 2. Display the frequencies and bins(classes) 3. Add titles and labels `81"
+  },
+  {
+    "title": "Figure 8",
+    "cell_id": "cell-310",
+    "output_index": 2,
+    "image_rel": "images/output_008.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\nage = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,\n        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,\n        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,\n        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,\n        43,42,41]\n\n(freq, bins, patches) = plt.hist(age,bins=5,edgecolor='white', range=[40,90])\n\nplt.suptitle(\"Histogram\")\nplt.xlabel(\"Age\")\n...",
+    "markdown_context": "Example: Histograms from raw data Use the US Senators age data given below and write a program to: 1. Make a histogram with 5 bins (classes) and age range of 40 to 90 2. Display the frequencies and bins(classes) 3. Add titles and labels `81 | Interpretation from the above output for bins and frequencies: bins|frequency ---|--- 40-50|10 50-60|29 60-70|34 70-80|21 80-90|6 key: 40-50 is [40,60)"
+  },
+  {
+    "title": "Figure 9",
+    "cell_id": "cell-319",
+    "output_index": 1,
+    "image_rel": "images/output_009.png",
+    "code_preview": "x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,\n        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,\n        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,\n        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,\n        43,42,41]\npolygon(x,5)",
+    "markdown_context": "[Watch demo video](https://youtu.be/tODhCXiiZ3U) 1. Click `play` button on the above code `def polygon(x,n)` 2. Type `x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,70,70,68,68,68,68,68,67,67,67,66,66,65,65, | ### Ogive Ogive is a line graph that displays cumulative frequency of each (upper) class. To graph an ogive , use the function `ogive(x,n)` given below. `x` is the dataset list and `n` is the number of classes/bins."
+  },
+  {
+    "title": "Figure 10",
+    "cell_id": "cell-324",
+    "output_index": 1,
+    "image_rel": "images/output_010.png",
+    "code_preview": "x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,\n        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,\n        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,\n        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,\n        43,42,41]\nogive(x,5)",
+    "markdown_context": "[Watch demo video](https://youtu.be/DqXv-D5-3S4) 1. Click `play` button on the above code `def ogive(x,n)` 2. Type `x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,70,70,68,68,68,68,68,67,67,67,66,66,65,65,65 | <a name=\"dot\"></a> ## 5.5 Dot Plots Dot plot is like bar graph with dots instead of bars. To graph an dot plot , use the function `dotplot(x)` given below. `x` is the dataset list."
+  },
+  {
+    "title": "Figure 11",
+    "cell_id": "cell-329",
+    "output_index": 1,
+    "image_rel": "images/output_011.png",
+    "code_preview": "x=[1, 2, 2, 3, 3, 3, 3, 4, 7, 9]\ndotplots(x)",
+    "markdown_context": "[Watch demo video](https://youtu.be/ZF8BB080wFM) 1. Click `play` button on the code above `def dotplot(x)` 2. Type `x = [1,2,2,3,3,3,3,4,7,9]` 3. Type `dotplot(x)` 4. Click `play` button | Example: The dataset below is the waiting time, in minutes, of customers at a fast food restaurant. Construct a dot plot. `2, 4, 7, 5, 3, 9, 6, 4, 2, 7, 7, 7, 4, 7, 9` First run(execute) the `dotplots(x)` above."
+  },
+  {
+    "title": "Figure 12",
+    "cell_id": "cell-331",
+    "output_index": 1,
+    "image_rel": "images/output_012.png",
+    "code_preview": "x = [2, 4, 7, 5, 3, 9, 6, 4, 2, 7, 7, 7, 4, 7, 9]\ndotplots(x, \"Waiting Time\")",
+    "markdown_context": "Example: The dataset below is the waiting time, in minutes, of customers at a fast food restaurant. Construct a dot plot. `2, 4, 7, 5, 3, 9, 6, 4, 2, 7, 7, 7, 4, 7, 9` First run(execute) the `dotplots(x)` above. | <a name=\"sal\"></a> ## 5.6 Stem and leaf Plots We need to install **Stemgraphic** for plotting stem-and-leaf plot. This is because Stemgraphic is not included in any of the Python Libraries. To install Stemgraphic type the following syntax. "
+  },
+  {
+    "title": "Figure 13",
+    "cell_id": "cell-338",
+    "output_index": 2,
+    "image_rel": "images/output_013.png",
+    "code_preview": "import stemgraphic\nx = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74, \n           78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100] \nstemgraphic.stem_graphic(x,scale=10,aggregation=False)",
+    "markdown_context": "[Watch demo video](https://youtu.be/D3zNpjYvGW0) 1. Click `+ Code` 2. Type `pip install stemgraphic` 3. Click `play` button 4. Click `+ Code` 5. Type `import stemgraphic` 6. Type `x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, | Example: The dataset below is scores of 20 students in a stat class. Construct a stem-and-leaf plot. `[81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]`"
+  },
+  {
+    "title": "Figure 14",
+    "cell_id": "cell-340",
+    "output_index": 2,
+    "image_rel": "images/output_014.png",
+    "code_preview": "import stemgraphic\n\nx = [81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32,\n       52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]    \n\nstemgraphic.stem_graphic(x,scale = 10,aggregation=False)",
+    "markdown_context": "Example: The dataset below is scores of 20 students in a stat class. Construct a stem-and-leaf plot. `[81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]` | <a name=\"scat\"></a> ## 5.7 Scatter Plots [Watch demo video](https://youtu.be/fhgYqcvlx5k) A data set with a pair of quantitative variables can be displayed with a scatter plot. Example: Age in years and the corresponding height in centimete"
+  },
+  {
+    "title": "Figure 15",
+    "cell_id": "cell-343",
+    "output_index": 2,
+    "image_rel": "images/output_015.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\nx = [5,6,7,8,9,10]\ny = [95,100,105,107,110,115]\n\nplt.scatter(x,y)\n\nplt.suptitle('Scatter Plot Age vs Height')\nplt.xlabel('Age(yrs)')\nplt.ylabel('Height(cm)')",
+    "markdown_context": "1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `x = [5,6,7,8,9,10]` 4. Type `y = [95,100,105,107,110,115]` 5. Type `plt.scatter(x,y)` 6. Type `plt.suptitle('Scatter Plot Age vs Height')` 7. Type `plt.xlabel('Age(yrs)')` | <a name=\"moc\"></a> # 6. Measures of Center and Variation [Watch demo video](https://youtu.be/oZKsKO9eJz4) A numerical value that is representative of the dataset located at the \"center\". The three most widely used measures of the center of "
+  },
+  {
+    "title": "Figure 16",
+    "cell_id": "cell-430",
+    "output_index": 2,
+    "image_rel": "images/output_016.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\n\nx = [81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, \n             32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]\n\nplt.boxplot(x)    \n\nplt.suptitle(\"Box Plot\")\nplt.xlabel(\"Test Scores\")",
+    "markdown_context": "Example: The dataset below is scores of 20 students in a stat class. Construct a box plot. `81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19` | Example: The dataset below is scores of 20 students in a stat class. Construct a **horizontal** box plot. Horizontal box plot is useful for identifying the shape of the distribution. `81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, "
+  },
+  {
+    "title": "Figure 17",
+    "cell_id": "cell-432",
+    "output_index": 2,
+    "image_rel": "images/output_017.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\n\nx = [81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, \n             32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]\n\n\nplt.boxplot(x,vert=False)  # add vert=False \nplt.suptitle(\"Box Plot\")\nplt.xlabel(\"Test Scores\")",
+    "markdown_context": "Example: The dataset below is scores of 20 students in a stat class. Construct a **horizontal** box plot. Horizontal box plot is useful for identifying the shape of the distribution. `81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62,  | Example: Below is the list of ages of US Senators (2020). Write a program to draw a box plot. `81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70 ,70, 70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63"
+  },
+  {
+    "title": "Figure 18",
+    "cell_id": "cell-434",
+    "output_index": 2,
+    "image_rel": "images/output_018.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\n\nx = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,\n        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,\n        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,\n        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,\n        43,42,41]\n\nplt.boxplot(x)\n\nplt.suptitle(\"Box Plot\")",
+    "markdown_context": "Example: Below is the list of ages of US Senators (2020). Write a program to draw a box plot. `81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70 ,70, 70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63 | <a name=\"iqr\"></a> ### Outliers"
+  },
+  {
+    "title": "Figure 19",
+    "cell_id": "cell-435",
+    "output_index": 2,
+    "image_rel": "images/output_019.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\n\nx = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,\n        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,\n        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,\n        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,\n        43,42,41]\n\nplt.boxplot(x,vert=False)\n\nplt.suptitle(\"Box Plot\")\n...",
+    "markdown_context": "Example: Below is the list of ages of US Senators (2020). Write a program to draw a box plot. `81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70 ,70, 70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63 | <a name=\"iqr\"></a> ### Outliers"
+  },
+  {
+    "title": "Figure 20",
+    "cell_id": "cell-438",
+    "output_index": 2,
+    "image_rel": "images/output_020.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\nx=[1, 2, 2, 3, 3, 3, 3, 4, 7, 9,25]\n\nplt.boxplot(x,vert=False)  \nplt.suptitle(\"Box Plot\")",
+    "markdown_context": "Example: For the data below, construct a **horizontal** box plot to identify any outliers. `1, 2, 2, 3, 3, 3, 3, 4, 7, 9,25` | 25 is identified as an outlier in the boxplot above marked with `o`. Any value below the left whisker or above the right whisker is considered an outlier."
+  },
+  {
+    "title": "Figure 21",
+    "cell_id": "cell-478",
+    "output_index": 1,
+    "image_rel": "images/output_021.png",
+    "code_preview": "binomplot(10,.6)   # run the binomplot function above first",
+    "markdown_context": "Example: plot a binomial distribution with n=10 and p=0.6 | Example: Graph a Binomial Probability Distribution with n=10 and p=.3."
+  },
+  {
+    "title": "Figure 22",
+    "cell_id": "cell-480",
+    "output_index": 1,
+    "image_rel": "images/output_022.png",
+    "code_preview": "binomplot(10,.3)    # run the binomplot function above first",
+    "markdown_context": "Example: Graph a Binomial Probability Distribution with n=10 and p=.3. | <a name=\"cont\"></a> # 9. Continuous Probability Distributions Let $f(x)$ be the probability distribution of a continuous random variable $x$. Then the probability that $a < x < b$ corresponds to the area under the curve $y = f(x)$ between $"
+  },
+  {
+    "title": "Figure 23",
+    "cell_id": "cell-676",
+    "output_index": 2,
+    "image_rel": "images/output_023.png",
+    "code_preview": "# scatterplot\nimport matplotlib.pyplot as plt\nx = [65, 67, 71, 71, 66, 75, 67, 70, 71, 69, 69]\ny = [145, 133, 185, 163, 126, 198, 153, 163, 159, 151, 159]\nplt.scatter(x, y)",
+    "markdown_context": "Interpretation: for now we only need the third output `rvalue=0.8797451071731136` | There is a positive or direct relationship."
+  },
+  {
+    "title": "Figure 24",
+    "cell_id": "cell-680",
+    "output_index": 2,
+    "image_rel": "images/output_024.png",
+    "code_preview": "import matplotlib.pyplot as plt\n\nx=[2,0,3,5,4,7,4,6,5,1]\ny=[60,55,65,69,70,90,71,88,79,51]\n\nplt.scatter(x,y)",
+    "markdown_context": "Example: The number of hours studied, x, and test scores, y, for 10 students are listed below. Find the correlation coefficient and display the scatter plot. x|2|0|3|5|4|7|4|6|5|1| ---|---|--|--|--|--|--|--|--|--|---| **y**|**60**|**55**|** | <a name=\"lr\"></a> ## 12.3 Linear Regression [Watch demo video](https://youtu.be/QaK6CcVnElI) We can use the variables x and y to **model** a linear relationship between x and y with a linear equation of the form $y=b+mx$. The Least-Squares "
+  },
+  {
+    "title": "Figure 25",
+    "cell_id": "cell-689",
+    "output_index": 2,
+    "image_rel": "images/output_025.png",
+    "code_preview": "import matplotlib.pyplot as plt\nimport numpy as np\n\n\nx=[2,0,3,5,4,7,4,6,5,1]\ny=[60,55,65,69,70,90,71,88,79,51]\n\nx = np.array(x)\ny = np.array(y)\n\ny_hat = 5.564625850340137*x + 49.21088435374149\n...",
+    "markdown_context": "Interpretation: slope=5.564625850340137, intercept=49.21088435374149, r-value=0.9485857685252971, pvalue=2.8725087369610658e-05 | ## Regression Line The function `lin_reg(x,Y)` below provides the slope, y-intercept of the least-squares regression line. In addition it returns the R-square, p-value, t-test statistic for testing the significance of the correlation coeffi"
+  },
+  {
+    "title": "Figure 26",
+    "cell_id": "cell-694",
+    "output_index": 3,
+    "image_rel": "images/output_026.png",
+    "code_preview": "lin_reg(x,y)",
+    "markdown_context": "Example: The midterm exam, x, and final exam, y, scores for a random sample of 11 students is listed below. Find the slope and intercept of the regression line, correlation coefficient and draw a scatter plot. x|65|67|71|71|66|75|67|70|71|6 | Interpretation: r=0.8797451071731136 indicates strong positive linear relationship. R squared: 0.7739514535950331 indicates 77.4% of the variation can be explained by the linear model. p-value: 0.0003559356815323585 indicates the correlatio"
+  },
+  {
+    "title": "Figure 27",
+    "cell_id": "cell-881",
+    "output_index": 2,
+    "image_rel": "images/output_027.png",
+    "code_preview": "x_df.groupby(['gender']).size().plot(kind='bar')\n\nimport matplotlib.pyplot as plt\n\nplt.suptitle(\"Bar Graph\")\nplt.ylabel(\"Frequency\")",
+    "markdown_context": "### Bar graphs | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display a frequency pie chart for section. https://raw.githubusercontent.com/simeonaman/demo/master/my_c"
+  },
+  {
+    "title": "Figure 28",
+    "cell_id": "cell-885",
+    "output_index": 2,
+    "image_rel": "images/output_028.png",
+    "code_preview": "x_df.groupby(['section']).size().plot(kind='pie')\n\nimport matplotlib.pyplot as plt\n\nplt.suptitle(\"Pie Chart\")\nplt.ylabel(\"sections\")",
+    "markdown_context": "### Pie Chart | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display a box plot for test1_socre. https://raw.githubusercontent.com/simeonaman/demo/master/my_csv_file"
+  },
+  {
+    "title": "Figure 29",
+    "cell_id": "cell-889",
+    "output_index": 2,
+    "image_rel": "images/output_029.png",
+    "code_preview": "x_df.boxplot(column=['test1_score'], showmeans = True)",
+    "markdown_context": "### Box Plots | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by level. https://raw.githubusercontent.com/simeonaman/demo/mas"
+  },
+  {
+    "title": "Figure 30",
+    "cell_id": "cell-892",
+    "output_index": 2,
+    "image_rel": "images/output_030.png",
+    "code_preview": "x_df.boxplot(column=['test1_score'], by = ['level'], showmeans = True, vert = False)",
+    "markdown_context": "Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by level. https://raw.githubusercontent.com/simeonaman/demo/mas | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by gender. https://raw.githubusercontent.com/simeonaman/demo/ma"
+  },
+  {
+    "title": "Figure 31",
+    "cell_id": "cell-895",
+    "output_index": 3,
+    "image_rel": "images/output_031.png",
+    "code_preview": "x_df.boxplot(column=['test1_score'], by = ['gender'], showmeans = True, vert = False,)",
+    "markdown_context": "Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by gender. https://raw.githubusercontent.com/simeonaman/demo/ma | Alternative solution to the above example using the `seaborn` visualization library"
+  },
+  {
+    "title": "Figure 32",
+    "cell_id": "cell-897",
+    "output_index": 1,
+    "image_rel": "images/output_032.png",
+    "code_preview": "import pandas as pd\nimport seaborn as sns\nsns.set_theme(style=\"ticks\", palette=\"pastel\")\n\n# Load the example tips dataset\nurl='https://raw.githubusercontent.com/simeonaman/demo/master/my_csv_file.csv'\n\nx_df = pd.read_csv(url)\n\nsns.boxplot(x=\"test1_score\", y=\"gender\", hue_order=\"smoker\", palette=[\"m\", \"g\"], data=x_df)\nsns.despine(offset=10, trim=True)",
+    "markdown_context": "Alternative solution to the above example using the `seaborn` visualization library | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display a histogram for test1_score with 6 bins(classes). https://raw.githubusercontent.com/simeonaman/d"
+  },
+  {
+    "title": "Figure 33",
+    "cell_id": "cell-901",
+    "output_index": 2,
+    "image_rel": "images/output_033.png",
+    "code_preview": "x_df.test1_score.hist(bins=10, ec='k')",
+    "markdown_context": "### Histograms | ### Scatter plots"
+  },
+  {
+    "title": "Figure 34",
+    "cell_id": "cell-907",
+    "output_index": 2,
+    "image_rel": "images/output_034.png",
+    "code_preview": "x_df.plot('sqft_living','price',style='o', xlabel='Living Room Square Foot', ylabel='Price in Millions')",
+    "markdown_context": "Example: The dataset in the website (URL below) includes 20 columns about home sale, including `price`, number of `bedrooms` and `bathrooms`, areas etc. The data includes 21,613 entries. Write a program to display a scatter plot of `sqft_li | Example: The dataset in the website (URL below) includes 20 columns about home sale, including `price`, number of `bedrooms` and `bathrooms`, areas etc. The data includes 21,613 entries. Write a program to display a scatter plot of `bathroo"
+  },
+  {
+    "title": "Figure 35",
+    "cell_id": "cell-910",
+    "output_index": 2,
+    "image_rel": "images/output_035.png",
+    "code_preview": "x_df.plot('bathrooms','bedrooms',style='o')",
+    "markdown_context": "Example: The dataset in the website (URL below) includes 20 columns about home sale, including `price`, number of `bedrooms` and `bathrooms`, areas etc. The data includes 21,613 entries. Write a program to display a scatter plot of `bathroo | <a name=\"reg\"></a> ## 14.5 Regression"
+  }
+]

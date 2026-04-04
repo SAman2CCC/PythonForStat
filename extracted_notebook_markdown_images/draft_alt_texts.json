@@ -1,0 +1,138 @@
+[
+  {
+    "figure": 1,
+    "cell_id": "unknown",
+    "section": "",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Workbook illustration used in an introductory part of the notebook.",
+    "source": "data-url"
+  },
+  {
+    "figure": 2,
+    "cell_id": "unknown",
+    "section": "",
+    "current_alt": "python.png",
+    "suggested_alt": "Introductory Python graphic used at the start of the workbook.",
+    "source": "data-url"
+  },
+  {
+    "figure": 3,
+    "cell_id": "unknown",
+    "section": "To Open a New Colab Notebook",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Open a New Colab Notebook section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 4,
+    "cell_id": "unknown",
+    "section": "To Write Your First Python Code",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Write Your First Python Code section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 5,
+    "cell_id": "unknown",
+    "section": "To Execute(run) Your First Python Code",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Execute(run) Your First Python Code section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 6,
+    "cell_id": "unknown",
+    "section": "To Write Your Second Python Code",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Write Your Second Python Code section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 7,
+    "cell_id": "unknown",
+    "section": "To Write Your Third Python Code",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Write Your Third Python Code section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 8,
+    "cell_id": "unknown",
+    "section": "To Save Your Colab Notebook",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Save Your Colab Notebook section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 9,
+    "cell_id": "unknown",
+    "section": "To Open Your python1 Notebook",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the To Open Your python1 Notebook section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 10,
+    "cell_id": "unknown",
+    "section": "2.1 Creating and Accessing Lists",
+    "current_alt": "list.png",
+    "suggested_alt": "Illustration of Python list concepts, such as list structure and indexing.",
+    "source": "data-url"
+  },
+  {
+    "figure": 11,
+    "cell_id": "unknown",
+    "section": "2.1 Creating and Accessing Lists",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the 2.1 Creating and Accessing Lists section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 12,
+    "cell_id": "unknown",
+    "section": "Python Comparison (Logical) Operators",
+    "current_alt": "If Statement Flowchart",
+    "suggested_alt": "Flowchart showing the decision path of a Python if statement, including true and false branches.",
+    "source": "data-url"
+  },
+  {
+    "figure": 13,
+    "cell_id": "unknown",
+    "section": "4.1 The `for` Loop",
+    "current_alt": "For Loop Flowchart",
+    "suggested_alt": "Flowchart illustrating the control flow of a Python for loop through repeated iterations.",
+    "source": "data-url"
+  },
+  {
+    "figure": 14,
+    "cell_id": "unknown",
+    "section": "4.1 The `for` Loop",
+    "current_alt": "While Loop Flowchart",
+    "suggested_alt": "Flowchart illustrating the control flow of a Python while loop with condition checks and repetition.",
+    "source": "data-url"
+  },
+  {
+    "figure": 15,
+    "cell_id": "unknown",
+    "section": "9.2 Normal Probability Distribution",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the 9.2 Normal Probability Distribution section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 16,
+    "cell_id": "unknown",
+    "section": "**Appendix 1: Python Installing Steps**",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the **Appendix 1: Python Installing Steps** section.",
+    "source": "data-url"
+  },
+  {
+    "figure": 17,
+    "cell_id": "unknown",
+    "section": "**Appendix 1: Python Installing Steps**",
+    "current_alt": "Workbook figure",
+    "suggested_alt": "Illustration supporting the **Appendix 1: Python Installing Steps** section.",
+    "source": "data-url"
+  }
+]

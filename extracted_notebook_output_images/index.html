@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notebook Output Image Gallery</title>
+  <style>
+    :root {
+      --bg: #f6f2ea;
+      --paper: #fffdf8;
+      --ink: #1f1a17;
+      --muted: #6b5b4f;
+      --line: #dccfbe;
+      --accent: #8c3b2a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, #efe5d6 0, transparent 30%),
+        linear-gradient(180deg, #fbf8f1 0%, var(--bg) 100%);
+    }
+
+    header {
+      padding: 2rem 1.5rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+    }
+
+    header p {
+      margin: 0.35rem 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 3rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1rem;
+      box-shadow: 0 12px 30px rgba(73, 48, 31, 0.08);
+      display: grid;
+      gap: 1rem;
+    }
+
+    .meta h2 {
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      font-size: 1.35rem;
+    }
+
+    .meta p,
+    section p {
+      margin: 0.25rem 0;
+      line-height: 1.45;
+    }
+
+    img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.5rem;
+    }
+
+    section h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+    }
+
+    pre {
+      margin: 0;
+      padding: 0.9rem;
+      overflow: auto;
+      background: #f3ede3;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      white-space: pre-wrap;
+    }
+
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Output Image Gallery</h1>
+    <p><strong>Notebook:</strong> Python_for_Introductory_Statistics_V2.ipynb</p>
+    <p>This gallery contains generated image outputs extracted from the notebook so they can be reviewed and described individually.</p>
+    <p>Open a PNG directly if you want a larger standalone view, then send back the description you want for that figure.</p>
+  </header>
+  <main>
+    <article class="card">
+              <div class="meta">
+                <h2>Figure 1</h2>
+                <p><strong>Cell id:</strong> cell-289</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_001.png">open PNG</a></p>
+              </div>
+              <img src="images/output_001.png" alt="Preview for Figure 1">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+v = [&#x27;yes&#x27;,&#x27;no&#x27;]
+f = [11,9]
+plt.bar(v,f)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Watch demo video](https://youtu.be/QsYU4o1yLJg) 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `v = [&#x27;Yes&#x27;,&#x27;No&#x27;]` 4. Type `f = [11,9]` 5. Type `plt.bar(v,f)` 6. Click `play` button 7. Right click image to save it to yo | Example: 20 students were asked if they were registered to vote. Their responses are given below. Plot a pie chart (percent). vote|freq ---|--- Yes|11 No|9</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 2</h2>
+                <p><strong>Cell id:</strong> cell-292</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_002.png">open PNG</a></p>
+              </div>
+              <img src="images/output_002.png" alt="Preview for Figure 2">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+v = [&#x27;yes&#x27;,&#x27;no&#x27;]
+f = [11,9]
+plt.pie(f,labels=v,autopct=&#x27;%1.1f%%&#x27;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Watch demo video](https://youtu.be/N0kg36QPWzQ) 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `v = [&#x27;Yes&#x27;,&#x27;No&#x27;]` 4. Type `f = [11,9]` 5. Type `plt.bar(f,labels=f,autopct=&#x27;%1.1f%%&#x27;)` 6. Click `play` button 7. Right cli | Example: 20 students were asked if they were registered to vote. Their responses are given below. Plot a bar graph. vote|freq ---|--- Yes|11 No|9 Add title, vertical and horizontal labels.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 3</h2>
+                <p><strong>Cell id:</strong> cell-295</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_003.png">open PNG</a></p>
+              </div>
+              <img src="images/output_003.png" alt="Preview for Figure 3">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+v = [&#x27;yes&#x27;,&#x27;no&#x27;]
+f = [11,9]
+plt.bar(v,f)
+plt.suptitle(&quot;Voter Registration&quot;)
+plt.xlabel(&quot;Registration&quot;)
+plt.ylabel(&quot;Frequency&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `v = [&#x27;Yes&#x27;,&#x27;No&#x27;]` 4. Type `f = [11,9]` 5. Type `plt.bar(v,f)` 6. Type `plt.suptitle(&quot;Voter Registation&quot;)` 7. Type `plt.xlabel(&quot;Registration&quot;)` 8. Type `plt.ylabel(&quot;Frequen | Example: The frequency distribution below is the waiting time, in minutes, of 20 customers at a fast food restaurant. Waiting_time | Frequency -----|------- 1|2 2|3 3|4 4|5 5|5 6|1</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 4</h2>
+                <p><strong>Cell id:</strong> cell-298</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_004.png">open PNG</a></p>
+              </div>
+              <img src="images/output_004.png" alt="Preview for Figure 4">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+waiting_time = [1,2,3,4,5,6]        
+frequency = [2,3,4,5,5,1]      
+
+plt.bar(waiting_time,frequency)        
+
+plt.xlabel(&quot;Waiting Time&quot;)
+plt.ylabel(&quot;Frequency&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Plot a bar graph and a pie chart. **Note**: First the data values in the two columns are entered separately using Python lists: `waiting_time` and `frequency`. 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `waiting_tim | Example: The frequency distribution below is the waiting time, in minutes, of 20 customers at a fast food restaurant. Waiting_time | Frequency -----|------- 1|2 2|3 3|4 4|5 5|5 6|1 Graph a Pie Chart</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 5</h2>
+                <p><strong>Cell id:</strong> cell-300</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_005.png">open PNG</a></p>
+              </div>
+              <img src="images/output_005.png" alt="Preview for Figure 5">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+waiting_time = [1,2,3,4,5,6]        
+frequency = [2,3,4,5,5,1]      
+plt.pie(frequency, labels=waiting_time,autopct=&#x27;%1.1f%%&#x27;)        
+plt.xlabel(&quot;Waiting Time&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The frequency distribution below is the waiting time, in minutes, of 20 customers at a fast food restaurant. Waiting_time | Frequency -----|------- 1|2 2|3 3|4 4|5 5|5 6|1 Graph a Pie Chart | &lt;a name=&quot;hist&quot;&gt;&lt;/a&gt; ## 5.4 Histogram, Polygon and Ogive A histogram uses connected bars to represent the frequency distribution of a continuous dataset.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 6</h2>
+                <p><strong>Cell id:</strong> cell-305</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_006.png">open PNG</a></p>
+              </div>
+              <img src="images/output_006.png" alt="Preview for Figure 6">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80, 
+     83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100]
+plt.hist(x,bins=5,ec=&#x27;k&#x27;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Deom Video Link](https://youtu.be/L8d6GKv-95Y) 1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, | Example: The dataset below is scores of 20 students in a Math class. Write a program to construct a histogram with 5 classes(bins). Use class limits for the x-axis. `33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80,</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 7</h2>
+                <p><strong>Cell id:</strong> cell-308</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_007.png">open PNG</a></p>
+              </div>
+              <img src="images/output_007.png" alt="Preview for Figure 7">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74, 
+           78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100]
+
+(freq,class_limit,patches) = plt.hist(x,bins=5,ec=&#x27;k&#x27;)
+plt.xticks(class_limit)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74,78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100]` 4. Type `(freq, class_limit, patches) = p | Example: Histograms from raw data Use the US Senators age data given below and write a program to: 1. Make a histogram with 5 bins (classes) and age range of 40 to 90 2. Display the frequencies and bins(classes) 3. Add titles and labels `81</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 8</h2>
+                <p><strong>Cell id:</strong> cell-310</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_008.png">open PNG</a></p>
+              </div>
+              <img src="images/output_008.png" alt="Preview for Figure 8">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+age = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,
+        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,
+        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,
+        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,
+        43,42,41]
+
+(freq, bins, patches) = plt.hist(age,bins=5,edgecolor=&#x27;white&#x27;, range=[40,90])
+
+plt.suptitle(&quot;Histogram&quot;)
+plt.xlabel(&quot;Age&quot;)
+...</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: Histograms from raw data Use the US Senators age data given below and write a program to: 1. Make a histogram with 5 bins (classes) and age range of 40 to 90 2. Display the frequencies and bins(classes) 3. Add titles and labels `81 | Interpretation from the above output for bins and frequencies: bins|frequency ---|--- 40-50|10 50-60|29 60-70|34 70-80|21 80-90|6 key: 40-50 is [40,60)</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 9</h2>
+                <p><strong>Cell id:</strong> cell-319</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_009.png">open PNG</a></p>
+              </div>
+              <img src="images/output_009.png" alt="Preview for Figure 9">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,
+        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,
+        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,
+        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,
+        43,42,41]
+polygon(x,5)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Watch demo video](https://youtu.be/tODhCXiiZ3U) 1. Click `play` button on the above code `def polygon(x,n)` 2. Type `x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,70,70,68,68,68,68,68,67,67,67,66,66,65,65, | ### Ogive Ogive is a line graph that displays cumulative frequency of each (upper) class. To graph an ogive , use the function `ogive(x,n)` given below. `x` is the dataset list and `n` is the number of classes/bins.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 10</h2>
+                <p><strong>Cell id:</strong> cell-324</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_010.png">open PNG</a></p>
+              </div>
+              <img src="images/output_010.png" alt="Preview for Figure 10">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,
+        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,
+        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,
+        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,
+        43,42,41]
+ogive(x,5)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Watch demo video](https://youtu.be/DqXv-D5-3S4) 1. Click `play` button on the above code `def ogive(x,n)` 2. Type `x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,70,70,68,68,68,68,68,67,67,67,66,66,65,65,65 | &lt;a name=&quot;dot&quot;&gt;&lt;/a&gt; ## 5.5 Dot Plots Dot plot is like bar graph with dots instead of bars. To graph an dot plot , use the function `dotplot(x)` given below. `x` is the dataset list.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 11</h2>
+                <p><strong>Cell id:</strong> cell-329</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_011.png">open PNG</a></p>
+              </div>
+              <img src="images/output_011.png" alt="Preview for Figure 11">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x=[1, 2, 2, 3, 3, 3, 3, 4, 7, 9]
+dotplots(x)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Watch demo video](https://youtu.be/ZF8BB080wFM) 1. Click `play` button on the code above `def dotplot(x)` 2. Type `x = [1,2,2,3,3,3,3,4,7,9]` 3. Type `dotplot(x)` 4. Click `play` button | Example: The dataset below is the waiting time, in minutes, of customers at a fast food restaurant. Construct a dot plot. `2, 4, 7, 5, 3, 9, 6, 4, 2, 7, 7, 7, 4, 7, 9` First run(execute) the `dotplots(x)` above.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 12</h2>
+                <p><strong>Cell id:</strong> cell-331</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_012.png">open PNG</a></p>
+              </div>
+              <img src="images/output_012.png" alt="Preview for Figure 12">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x = [2, 4, 7, 5, 3, 9, 6, 4, 2, 7, 7, 7, 4, 7, 9]
+dotplots(x, &quot;Waiting Time&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset below is the waiting time, in minutes, of customers at a fast food restaurant. Construct a dot plot. `2, 4, 7, 5, 3, 9, 6, 4, 2, 7, 7, 7, 4, 7, 9` First run(execute) the `dotplots(x)` above. | &lt;a name=&quot;sal&quot;&gt;&lt;/a&gt; ## 5.6 Stem and leaf Plots We need to install **Stemgraphic** for plotting stem-and-leaf plot. This is because Stemgraphic is not included in any of the Python Libraries. To install Stemgraphic type the following syntax. </p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 13</h2>
+                <p><strong>Cell id:</strong> cell-338</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_013.png">open PNG</a></p>
+              </div>
+              <img src="images/output_013.png" alt="Preview for Figure 13">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import stemgraphic
+x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, 72, 73, 74, 
+           78, 80, 83, 88, 88, 88, 90, 92, 94, 94, 94, 94, 96, 100] 
+stemgraphic.stem_graphic(x,scale=10,aggregation=False)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>[Watch demo video](https://youtu.be/D3zNpjYvGW0) 1. Click `+ Code` 2. Type `pip install stemgraphic` 3. Click `play` button 4. Click `+ Code` 5. Type `import stemgraphic` 6. Type `x = [33, 42, 49, 49, 53, 55, 55, 61, 63, 67, 68, 68, 69, 69, | Example: The dataset below is scores of 20 students in a stat class. Construct a stem-and-leaf plot. `[81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]`</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 14</h2>
+                <p><strong>Cell id:</strong> cell-340</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_014.png">open PNG</a></p>
+              </div>
+              <img src="images/output_014.png" alt="Preview for Figure 14">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import stemgraphic
+
+x = [81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32,
+       52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]    
+
+stemgraphic.stem_graphic(x,scale = 10,aggregation=False)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset below is scores of 20 students in a stat class. Construct a stem-and-leaf plot. `[81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]` | &lt;a name=&quot;scat&quot;&gt;&lt;/a&gt; ## 5.7 Scatter Plots [Watch demo video](https://youtu.be/fhgYqcvlx5k) A data set with a pair of quantitative variables can be displayed with a scatter plot. Example: Age in years and the corresponding height in centimete</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 15</h2>
+                <p><strong>Cell id:</strong> cell-343</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_015.png">open PNG</a></p>
+              </div>
+              <img src="images/output_015.png" alt="Preview for Figure 15">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+x = [5,6,7,8,9,10]
+y = [95,100,105,107,110,115]
+
+plt.scatter(x,y)
+
+plt.suptitle(&#x27;Scatter Plot Age vs Height&#x27;)
+plt.xlabel(&#x27;Age(yrs)&#x27;)
+plt.ylabel(&#x27;Height(cm)&#x27;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>1. Click `+ Code` 2. Type `import matplotlib.pyplot as plt` 3. Type `x = [5,6,7,8,9,10]` 4. Type `y = [95,100,105,107,110,115]` 5. Type `plt.scatter(x,y)` 6. Type `plt.suptitle(&#x27;Scatter Plot Age vs Height&#x27;)` 7. Type `plt.xlabel(&#x27;Age(yrs)&#x27;)` | &lt;a name=&quot;moc&quot;&gt;&lt;/a&gt; # 6. Measures of Center and Variation [Watch demo video](https://youtu.be/oZKsKO9eJz4) A numerical value that is representative of the dataset located at the &quot;center&quot;. The three most widely used measures of the center of </p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 16</h2>
+                <p><strong>Cell id:</strong> cell-430</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_016.png">open PNG</a></p>
+              </div>
+              <img src="images/output_016.png" alt="Preview for Figure 16">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+
+x = [81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 
+             32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]
+
+plt.boxplot(x)    
+
+plt.suptitle(&quot;Box Plot&quot;)
+plt.xlabel(&quot;Test Scores&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset below is scores of 20 students in a stat class. Construct a box plot. `81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19` | Example: The dataset below is scores of 20 students in a stat class. Construct a **horizontal** box plot. Horizontal box plot is useful for identifying the shape of the distribution. `81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, </p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 17</h2>
+                <p><strong>Cell id:</strong> cell-432</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_017.png">open PNG</a></p>
+              </div>
+              <img src="images/output_017.png" alt="Preview for Figure 17">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+
+x = [81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62, 46, 40, 
+             32, 52, 85, 28, 17, 36, 83, 79, 18, 50, 17, 36, 36, 19]
+
+
+plt.boxplot(x,vert=False)  # add vert=False 
+plt.suptitle(&quot;Box Plot&quot;)
+plt.xlabel(&quot;Test Scores&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset below is scores of 20 students in a stat class. Construct a **horizontal** box plot. Horizontal box plot is useful for identifying the shape of the distribution. `81, 21, 53, 32, 80, 13, 26, 42, 35, 41, 14, 25, 87, 62,  | Example: Below is the list of ages of US Senators (2020). Write a program to draw a box plot. `81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70 ,70, 70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 18</h2>
+                <p><strong>Cell id:</strong> cell-434</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_018.png">open PNG</a></p>
+              </div>
+              <img src="images/output_018.png" alt="Preview for Figure 18">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+
+x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,
+        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,
+        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,
+        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,
+        43,42,41]
+
+plt.boxplot(x)
+
+plt.suptitle(&quot;Box Plot&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: Below is the list of ages of US Senators (2020). Write a program to draw a box plot. `81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70 ,70, 70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63 | &lt;a name=&quot;iqr&quot;&gt;&lt;/a&gt; ### Outliers</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 19</h2>
+                <p><strong>Cell id:</strong> cell-435</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_019.png">open PNG</a></p>
+              </div>
+              <img src="images/output_019.png" alt="Preview for Figure 19">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+
+x = [81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70,70,
+        70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63,63,
+        63,63,62,62,62,62,62,61,61,61,60,60,59,59,59,59,59,59,59,59,58,58,57,57,
+        56,56,55,54,54,54,54,54,53,53,52,52,52,52,52,51,50,49,48,46,45,44,43,43,
+        43,42,41]
+
+plt.boxplot(x,vert=False)
+
+plt.suptitle(&quot;Box Plot&quot;)
+...</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: Below is the list of ages of US Senators (2020). Write a program to draw a box plot. `81,81,80,80,80,80,78,78,78,77,77,75,75,74,74,74,73,72,72,71,71,71,71,70 ,70, 70,70,68,68,68,68,68,67,67,67,66,66,65,65,65,65,64,64,64,64,64,64,63 | &lt;a name=&quot;iqr&quot;&gt;&lt;/a&gt; ### Outliers</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 20</h2>
+                <p><strong>Cell id:</strong> cell-438</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_020.png">open PNG</a></p>
+              </div>
+              <img src="images/output_020.png" alt="Preview for Figure 20">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+x=[1, 2, 2, 3, 3, 3, 3, 4, 7, 9,25]
+
+plt.boxplot(x,vert=False)  
+plt.suptitle(&quot;Box Plot&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: For the data below, construct a **horizontal** box plot to identify any outliers. `1, 2, 2, 3, 3, 3, 3, 4, 7, 9,25` | 25 is identified as an outlier in the boxplot above marked with `o`. Any value below the left whisker or above the right whisker is considered an outlier.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 21</h2>
+                <p><strong>Cell id:</strong> cell-478</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_021.png">open PNG</a></p>
+              </div>
+              <img src="images/output_021.png" alt="Preview for Figure 21">
+              <section>
+                <h3>Code preview</h3>
+                <pre>binomplot(10,.6)   # run the binomplot function above first</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: plot a binomial distribution with n=10 and p=0.6 | Example: Graph a Binomial Probability Distribution with n=10 and p=.3.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 22</h2>
+                <p><strong>Cell id:</strong> cell-480</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_022.png">open PNG</a></p>
+              </div>
+              <img src="images/output_022.png" alt="Preview for Figure 22">
+              <section>
+                <h3>Code preview</h3>
+                <pre>binomplot(10,.3)    # run the binomplot function above first</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: Graph a Binomial Probability Distribution with n=10 and p=.3. | &lt;a name=&quot;cont&quot;&gt;&lt;/a&gt; # 9. Continuous Probability Distributions Let $f(x)$ be the probability distribution of a continuous random variable $x$. Then the probability that $a &lt; x &lt; b$ corresponds to the area under the curve $y = f(x)$ between $</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 23</h2>
+                <p><strong>Cell id:</strong> cell-676</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_023.png">open PNG</a></p>
+              </div>
+              <img src="images/output_023.png" alt="Preview for Figure 23">
+              <section>
+                <h3>Code preview</h3>
+                <pre># scatterplot
+import matplotlib.pyplot as plt
+x = [65, 67, 71, 71, 66, 75, 67, 70, 71, 69, 69]
+y = [145, 133, 185, 163, 126, 198, 153, 163, 159, 151, 159]
+plt.scatter(x, y)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Interpretation: for now we only need the third output `rvalue=0.8797451071731136` | There is a positive or direct relationship.</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 24</h2>
+                <p><strong>Cell id:</strong> cell-680</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_024.png">open PNG</a></p>
+              </div>
+              <img src="images/output_024.png" alt="Preview for Figure 24">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+
+x=[2,0,3,5,4,7,4,6,5,1]
+y=[60,55,65,69,70,90,71,88,79,51]
+
+plt.scatter(x,y)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The number of hours studied, x, and test scores, y, for 10 students are listed below. Find the correlation coefficient and display the scatter plot. x|2|0|3|5|4|7|4|6|5|1| ---|---|--|--|--|--|--|--|--|--|---| **y**|**60**|**55**|** | &lt;a name=&quot;lr&quot;&gt;&lt;/a&gt; ## 12.3 Linear Regression [Watch demo video](https://youtu.be/QaK6CcVnElI) We can use the variables x and y to **model** a linear relationship between x and y with a linear equation of the form $y=b+mx$. The Least-Squares </p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 25</h2>
+                <p><strong>Cell id:</strong> cell-689</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_025.png">open PNG</a></p>
+              </div>
+              <img src="images/output_025.png" alt="Preview for Figure 25">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import matplotlib.pyplot as plt
+import numpy as np
+
+
+x=[2,0,3,5,4,7,4,6,5,1]
+y=[60,55,65,69,70,90,71,88,79,51]
+
+x = np.array(x)
+y = np.array(y)
+
+y_hat = 5.564625850340137*x + 49.21088435374149
+...</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Interpretation: slope=5.564625850340137, intercept=49.21088435374149, r-value=0.9485857685252971, pvalue=2.8725087369610658e-05 | ## Regression Line The function `lin_reg(x,Y)` below provides the slope, y-intercept of the least-squares regression line. In addition it returns the R-square, p-value, t-test statistic for testing the significance of the correlation coeffi</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 26</h2>
+                <p><strong>Cell id:</strong> cell-694</p>
+                <p><strong>Output:</strong> 3</p>
+                <p><strong>Image:</strong> <a href="images/output_026.png">open PNG</a></p>
+              </div>
+              <img src="images/output_026.png" alt="Preview for Figure 26">
+              <section>
+                <h3>Code preview</h3>
+                <pre>lin_reg(x,y)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The midterm exam, x, and final exam, y, scores for a random sample of 11 students is listed below. Find the slope and intercept of the regression line, correlation coefficient and draw a scatter plot. x|65|67|71|71|66|75|67|70|71|6 | Interpretation: r=0.8797451071731136 indicates strong positive linear relationship. R squared: 0.7739514535950331 indicates 77.4% of the variation can be explained by the linear model. p-value: 0.0003559356815323585 indicates the correlatio</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 27</h2>
+                <p><strong>Cell id:</strong> cell-881</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_027.png">open PNG</a></p>
+              </div>
+              <img src="images/output_027.png" alt="Preview for Figure 27">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.groupby([&#x27;gender&#x27;]).size().plot(kind=&#x27;bar&#x27;)
+
+import matplotlib.pyplot as plt
+
+plt.suptitle(&quot;Bar Graph&quot;)
+plt.ylabel(&quot;Frequency&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>### Bar graphs | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display a frequency pie chart for section. https://raw.githubusercontent.com/simeonaman/demo/master/my_c</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 28</h2>
+                <p><strong>Cell id:</strong> cell-885</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_028.png">open PNG</a></p>
+              </div>
+              <img src="images/output_028.png" alt="Preview for Figure 28">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.groupby([&#x27;section&#x27;]).size().plot(kind=&#x27;pie&#x27;)
+
+import matplotlib.pyplot as plt
+
+plt.suptitle(&quot;Pie Chart&quot;)
+plt.ylabel(&quot;sections&quot;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>### Pie Chart | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display a box plot for test1_socre. https://raw.githubusercontent.com/simeonaman/demo/master/my_csv_file</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 29</h2>
+                <p><strong>Cell id:</strong> cell-889</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_029.png">open PNG</a></p>
+              </div>
+              <img src="images/output_029.png" alt="Preview for Figure 29">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.boxplot(column=[&#x27;test1_score&#x27;], showmeans = True)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>### Box Plots | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by level. https://raw.githubusercontent.com/simeonaman/demo/mas</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 30</h2>
+                <p><strong>Cell id:</strong> cell-892</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_030.png">open PNG</a></p>
+              </div>
+              <img src="images/output_030.png" alt="Preview for Figure 30">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.boxplot(column=[&#x27;test1_score&#x27;], by = [&#x27;level&#x27;], showmeans = True, vert = False)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by level. https://raw.githubusercontent.com/simeonaman/demo/mas | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by gender. https://raw.githubusercontent.com/simeonaman/demo/ma</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 31</h2>
+                <p><strong>Cell id:</strong> cell-895</p>
+                <p><strong>Output:</strong> 3</p>
+                <p><strong>Image:</strong> <a href="images/output_031.png">open PNG</a></p>
+              </div>
+              <img src="images/output_031.png" alt="Preview for Figure 31">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.boxplot(column=[&#x27;test1_score&#x27;], by = [&#x27;gender&#x27;], showmeans = True, vert = False,)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display box plot for test1_score grouped by gender. https://raw.githubusercontent.com/simeonaman/demo/ma | Alternative solution to the above example using the `seaborn` visualization library</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 32</h2>
+                <p><strong>Cell id:</strong> cell-897</p>
+                <p><strong>Output:</strong> 1</p>
+                <p><strong>Image:</strong> <a href="images/output_032.png">open PNG</a></p>
+              </div>
+              <img src="images/output_032.png" alt="Preview for Figure 32">
+              <section>
+                <h3>Code preview</h3>
+                <pre>import pandas as pd
+import seaborn as sns
+sns.set_theme(style=&quot;ticks&quot;, palette=&quot;pastel&quot;)
+
+# Load the example tips dataset
+url=&#x27;https://raw.githubusercontent.com/simeonaman/demo/master/my_csv_file.csv&#x27;
+
+x_df = pd.read_csv(url)
+
+sns.boxplot(x=&quot;test1_score&quot;, y=&quot;gender&quot;, hue_order=&quot;smoker&quot;, palette=[&quot;m&quot;, &quot;g&quot;], data=x_df)
+sns.despine(offset=10, trim=True)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Alternative solution to the above example using the `seaborn` visualization library | Example: The dataset below (URL) contains students test1_score, test2_score,test3_score, gender, level, section etc. Write a program to display a histogram for test1_score with 6 bins(classes). https://raw.githubusercontent.com/simeonaman/d</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 33</h2>
+                <p><strong>Cell id:</strong> cell-901</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_033.png">open PNG</a></p>
+              </div>
+              <img src="images/output_033.png" alt="Preview for Figure 33">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.test1_score.hist(bins=10, ec=&#x27;k&#x27;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>### Histograms | ### Scatter plots</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 34</h2>
+                <p><strong>Cell id:</strong> cell-907</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_034.png">open PNG</a></p>
+              </div>
+              <img src="images/output_034.png" alt="Preview for Figure 34">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.plot(&#x27;sqft_living&#x27;,&#x27;price&#x27;,style=&#x27;o&#x27;, xlabel=&#x27;Living Room Square Foot&#x27;, ylabel=&#x27;Price in Millions&#x27;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset in the website (URL below) includes 20 columns about home sale, including `price`, number of `bedrooms` and `bathrooms`, areas etc. The data includes 21,613 entries. Write a program to display a scatter plot of `sqft_li | Example: The dataset in the website (URL below) includes 20 columns about home sale, including `price`, number of `bedrooms` and `bathrooms`, areas etc. The data includes 21,613 entries. Write a program to display a scatter plot of `bathroo</p>
+              </section>
+            </article><article class="card">
+              <div class="meta">
+                <h2>Figure 35</h2>
+                <p><strong>Cell id:</strong> cell-910</p>
+                <p><strong>Output:</strong> 2</p>
+                <p><strong>Image:</strong> <a href="images/output_035.png">open PNG</a></p>
+              </div>
+              <img src="images/output_035.png" alt="Preview for Figure 35">
+              <section>
+                <h3>Code preview</h3>
+                <pre>x_df.plot(&#x27;bathrooms&#x27;,&#x27;bedrooms&#x27;,style=&#x27;o&#x27;)</pre>
+              </section>
+              <section>
+                <h3>Nearby markdown context</h3>
+                <p>Example: The dataset in the website (URL below) includes 20 columns about home sale, including `price`, number of `bedrooms` and `bathrooms`, areas etc. The data includes 21,613 entries. Write a program to display a scatter plot of `bathroo | &lt;a name=&quot;reg&quot;&gt;&lt;/a&gt; ## 14.5 Regression</p>
+              </section>
+            </article>
+  </main>
+</body>
+</html>
