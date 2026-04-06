@@ -4,8 +4,8 @@ These are auto-generated draft suggestions. Edit wording as needed.
 
 | Figure | Section | Current Alt | Suggested Alt |
 |---:|---|---|---|
-| 1 | (no heading found) | Workbook figure | Workbook illustration used in an introductory part of the notebook. |
-| 2 | (no heading found) | python.png | Introductory Python graphic used at the start of the workbook. |
+| 1 | (no heading found) | Workbook figure | Truman College Logo used in an introductory part of the notebook. |
+| 2 | (no heading found) | python.png | Book Titel: Introductory Python graphic used at the start of the workbook. |
 | 3 | To Open a New Colab Notebook | Workbook figure | Illustration supporting the To Open a New Colab Notebook section. |
 | 4 | To Write Your First Python Code | Workbook figure | Illustration supporting the To Write Your First Python Code section. |
 | 5 | To Execute(run) Your First Python Code | Workbook figure | Illustration supporting the To Execute(run) Your First Python Code section. |
